@@ -8,7 +8,7 @@ Predicts residential house sale prices using the Ames Iowa Housing dataset. Comp
  
 | Model | R² Score |
 |-------|----------|
-| **Linear Regression** | **0.9194** ✅ |
+| **Linear Regression** | **0.9194**  |
 | XGBoost | 0.8940 |
 | Random Forest | 0.8723 |
  
