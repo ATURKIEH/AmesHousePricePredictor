@@ -78,6 +78,8 @@ if remaining:
     print(f"Auto-encoded: {remaining}")
 
 
+print("final data set", df.columns.tolist())
+
 #defining x and y
 X = df.drop('SalePrice', axis=1)
 y = df['SalePrice']

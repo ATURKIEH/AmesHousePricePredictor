@@ -93,6 +93,9 @@ def train():
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
+
+    feature_medians = X_train.median()
+    pickle.dump(feature_medians, open('feature_medians.pkl', 'wb'))
  
     #scale — fit only on training data
     scaler = StandardScaler()
@@ -106,7 +109,8 @@ def train():
     pickle.dump(model,            open('model.pkl', 'wb'))
     pickle.dump(scaler,           open('scaler.pkl', 'wb'))
     pickle.dump(X.columns.tolist(), open('feature_columns.pkl', 'wb'))
- 
+    
+
     print("Training complete. Model saved to model.pkl")
     print(f"Features saved: {len(X.columns)} columns")
  
