@@ -1,4 +1,4 @@
-# 🏠 House Price Predictor
+#  House Price Predictor
  
 Predicts residential house sale prices using the Ames Iowa Housing dataset. Compares Linear Regression, Random Forest, and XGBoost — Linear Regression achieved the best results after log-transforming the target variable.
  
