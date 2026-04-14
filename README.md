@@ -85,3 +85,12 @@ Missing features are automatically filled with training data medians.
 Python, Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, FastAPI, Uvicorn
  
 ---
+
+## Running With Docker
+
+```bash
+docker pull aturkieh/house-price-predictor
+docker run -p 8000:8000 aturkieh/house-price-predictor
+```
+
+Then visit http://localhost:8000/docs
